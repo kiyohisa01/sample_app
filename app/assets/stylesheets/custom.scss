@@ -11,6 +11,7 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+
 /* universal */
 
 body {
@@ -31,6 +32,7 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
 
 /* typography */
 
@@ -77,6 +79,7 @@ p {
   }
 }
 
+
 /* footer */
 
 footer {
@@ -103,6 +106,25 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
 /* imscellaneous */
 
 .debug_dump {
@@ -111,6 +133,7 @@ footer {
   width: 100%;
   margin-top: 45px;
 }
+
 
 /* sidebar */
 
@@ -149,6 +172,7 @@ aside {
   margin-top: 15px;
 }
 
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
@@ -175,4 +199,11 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
 }
