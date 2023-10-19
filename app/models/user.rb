@@ -82,6 +82,7 @@ class User < ApplicationRecord
     Micropost.where("user_id = ?", id)
   end
 
+
   private # 非公開メソッド
 
     # メールアドレスをすべて小文字にする
